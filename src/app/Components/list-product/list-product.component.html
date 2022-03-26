@@ -1,0 +1,25 @@
+<div class="row__flex products">
+  <div class="l-3 t-6 c-12 mb-4" *ngFor="let item of datas">
+    <div>
+      <img
+        (click)="getProduct(item.id)"
+        src="{{ item.image }}"
+        alt="Sản phẩm 1"
+        class="img-circle img-thumbnail"
+      />
+      <p class="name">{{ item.name }}</p>
+      <dl class="dl-horizontal">
+        <dt>Giá:</dt>
+        <dd>{{ item.price }}</dd>
+      </dl>
+      <div class="tb-edit">
+        <a routerLink="/edit/{{ item.id }}" style="width: 80px;height: 50px;margin-top: 3px;" class="btn btn-1 color-gray"> Sửa</a>
+
+        <a (click)="addCart(item)" class="btn mt-1 btn-1 color-gray" style="width: 80px;
+        height: 50px;">
+          <i class=""></i> Thêm
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

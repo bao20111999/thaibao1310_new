@@ -1,0 +1,26 @@
+<div class="cart__body">
+  <table class="table table-hover ">
+    <tbody >
+    <table style="width :100%">
+      <tr>
+        <th>STT</th>
+        <th>Image </th>
+        <th> Name </th>
+        <th>Price </th>
+        <th>Edit </th>
+        <th style="text-align: center;">Delete</th>
+      </tr>
+      <tr *ngFor="let item of productCart | async">
+          <td style="width:5%" scope="row">{{item.id}}</td>
+          <td style="width:10%"  ><img src="{{item.image}}" class="img__cart" alt=""></td>
+          <td >{{item.name}}</td>
+          <td >{{item.price}}</td>
+
+          <td><a routerLink="/edit/{{ item.id }}" class="btn-edit" ><i class="fas fa-trash-alt"></i> Sửa</a></td>
+          <td  class="text-center"><a class="btn-delete" (click)="deleteCart(item.id)"><i class="fas fa-trash-alt"></i> Xóa</a></td>
+      </tr>
+    </table>
+    </tbody>
+  </table>
+
+</div>

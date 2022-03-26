@@ -1,0 +1,25 @@
+<div class="row__flex" style="margin-top: 100px;">
+    <div class="l-3 t-4 c-12 mx-lg-3 mx-md-3 mx-sm-auto">
+        <img src="{{product.image}}" alt="Sản phẩm 1" class="img-circle img-thumbnail" />
+    </div>
+    <div class="l-6 t-6 c-12 ml-3 mt-3">
+        <h5>{{product.name}}</h5>
+        <p>Giá: {{product.price}}</p>
+
+        <a (click)="addCart()" class="btn btn-1 color-green btn-end">
+            <svg>
+                <rect x="0" y="0" fill="none" width="100%" height="100%" />
+            </svg>
+            <i class="fas fa-cart-plus" ></i> Thêm
+        </a>
+
+    </div>
+</div>
+<div class="row mt-4 ml-2">
+
+    <h5>Mô tả:</h5>
+    <p> {{product.describe}}: Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, aspernatur sapiente vero
+        ad aliquid inventore
+        sint iure cupiditate magni sed accusamus voluptatum praesentium eaque pariatur unde quaerat labore modi vel!</p>
+
+</div>

@@ -1,0 +1,24 @@
+.cart__body{
+    height: 600px;
+   
+}
+.img__cart{
+    width: 60px;
+}
+.btn-delete{
+    padding: 10px 15px;
+    margin: 0;
+    text-decoration: none;
+    background-color: rgba(201, 190, 47, 0.644);
+    color: white;
+    border-radius: 7px;
+    font-weight: 200;
+}
+
+.btn-delete:hover{
+    background-color: rgba(90, 59, 163, 0.877);
+    font-weight: 500;
+}
+th{
+    color: #665757;
+}

@@ -1,0 +1,157 @@
+.nav {
+  background-color: #fffb00;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99999999999;
+}
+.nav_pc .nav_list li .logo_nav{
+  margin-top: -10px;
+  padding-right: 8px;
+  margin-left: 30px;
+  font-size: 40px;
+ }
+.nav_pc .nav_list li .logo_nav_text{
+ font-weight: 600;
+ padding-left: 0;
+}
+.nav_pc .nav_list .cart_li_nav{
+  float: right; margin-right: 30px;
+}
+
+.nav_pc .nav_list li .nav_link:hover{
+color: gray;
+transition: 1s;
+}
+.nav_pc .nav_list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav_pc .nav_list li {
+  float: left;
+}
+
+.nav_pc .nav_list li a {
+  display: block;
+  padding: 18px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* btn menu tablet mobile  */
+.nav_bars_btn {
+  padding: 18px;
+  padding-top: 8px;
+  height: 38px;
+  color: white;
+  display: none;
+  font-size: 30px;
+}
+.nav_overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(78, 26, 26, 0.3);
+  display: none;
+  animation: fadeIn linear 0.35s;
+}
+
+/* nav mobile  */
+
+.nav_mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 320px;
+  max-width: 100%;
+  background-color: #f6f201;
+  transform: translate(-100%);
+  opacity: 0;
+  transition: transform linear 0.35s, opacity linear 0.35s;
+}
+
+.nav_mobile_list {
+  margin-left: 24px;
+  text-decoration:  none;
+  list-style-type:none !important ;
+}
+ .nav_mobile_list li a {
+  display: block;
+  padding: 18px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ .nav_mobile_list li .logo_nav{
+
+  font-weight: 800;
+ }
+ .nav_pc .nav_list li .logo_nav{
+  padding-top: 10px;
+  padding-right: 8px;
+  margin-left: 30px;
+  font-size: 40px;
+ }
+.nav_pc .nav_list li .logo_nav_text{
+ font-weight: 600;
+ padding-left: 0;
+}
+.nav_mobile_link {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 8px 0px;
+  font-size: 1.4rem;
+}
+
+.nav_mobile_close {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  color: #666;
+  top: 0.5rem;
+  right: 0.7rem;
+}
+
+.nav_input:checked ~ .nav_overlay{
+    display: block;
+}
+
+.nav_input:checked ~ .nav_mobile{
+   transform: translate(0%);
+   opacity: 1;
+}
+
+/* tablet && mobile  */
+@media (max-width: 1023px) {
+  .nav_bars_btn {
+    display: block;
+  }
+  .nav_pc {
+    display: none;
+  }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

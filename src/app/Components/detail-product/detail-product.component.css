@@ -1,0 +1,30 @@
+@media (max-width:461874em){
+    .btn-end {
+        position: relative;
+        top: 0px;
+      }
+
+}
+/* tablet  */
+@media (min-width: 46.1875em) and (max-width: 63.9375em) {
+  .btn-end {
+    position: relative;
+    top: 0px;
+  }
+}
+
+@media (min-width: 46.1875em) {
+  .btn-end {
+    position: relative;
+    top: 140px;
+  }
+}
+
+/* pc  */
+@media (min-width: 69.5625em) {
+  .btn-end {
+    position: relative;
+    top: 140px;
+  }
+ 
+}

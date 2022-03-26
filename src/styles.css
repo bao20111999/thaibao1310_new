@@ -1,0 +1,58 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #f4f4f4;
+}
+.btn {
+  font-size: 13px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+  margin: 0 0em;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  background-color: #5adacd;
+}
+
+.btn-1 {
+  font-weight: 100;
+  transition: all 0.25s;
+}
+.btn-1 rect {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-dasharray: 422, 0;
+  transition-delay: none;
+}
+.btn-1 svg {
+  height: 48px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.btn-1:hover {
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+.btn-1:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn-1.color-green:hover {
+  color: rgba(0, 0, 0, 0.788);
+}
+.btn-1.btn-1.color-green:hover rect {
+  stroke: rgba(0, 0, 0, 0.788);
+}
